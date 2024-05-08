@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
+  scroll-behavior: smooth
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-btn:hover{
+  .black-tag{
+    visibility: hidden;
+    transform: translateY(-1.2rem);
+    opacity: 0;
+  }
+  .red-tag{
+    visibility: visible;
+    transform: translateY(-0rem);
+    opacity: 1;
+  }
+}
+
+.black-tag{
+  transform: translateY(0rem);
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+
+.red-tag{
+  color: #ec0606;
+  position: absolute;
+  inset:0 ;
+  transform: translateY(1.2rem); 
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-btn::after{
+  display: block;
+  content: '';
+  position: absolute;
+  background: #4f63c7;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease 0s;
+  transform-origin: right;
+  width: '100%';
+  height: 2px;
+}
+
+.nav-btn:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.connect-btn:hover{
+  .img-1{
+    transform: translateX(24px);
+  }
+
+  .img-2{
+    transform: translate(0);
+  }
+
+  div{
+    transform: scale(1.10);
+  }
+}
+
+.sect-2::before{
+  display: block;
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: calc(100% - 2px);
+  background-image: url('/svgs/Shape-TP-1.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat, repeat-y;
+  height: 8vw;
+}
+
+.sect-2::after{
+  display: block;
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: calc(100% - 3px);
+  background-image: url('/svgs/Shape-BT-1.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat, repeat-y;
+  height: 8vw;
+}
+
+.sect-4::before{
+  display: block;
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: calc(100% - 2px);
+  background-image: url('/svgs/Shape-TP.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat, repeat-y;
+  height: 8vw;
+}
+
+.sect-7::before{
+  display: block;
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: calc(100% - 3px);
+  height: 7.813vw;
+  width: 100%;
+  background-image: url('/svgs/Shape-TP-1.svg');
+  background-size: 100% auto;
+  background-position: 100% 100%;
+  background-repeat: no-repeat, repeat-y;
+}
+
+.sect-7::after{
+  display: block;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: calc(100% - 3px);
+  height: 7.813vw;
+  width: 100%;
+  background-image: url('/svgs/Shape-BT-1.svg');
+  background-size: 100% auto;
+  background-position: 100% 100%;
+  background-repeat: no-repeat, repeat-y;
+}
+
+.product-dropdown{
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  transition: opacity 0.5s ease 0s;
+}
+
+.product-nav:hover div{
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.about-dropdown{
+  display: block;
+  position: absolute;
+  left: -20px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  transition: opacity 0.5s ease 0s;
+}
+
+.about-nav:hover div{
+  opacity: 1;
+  visibility: visible;
+
+}
+
+
+.resource-dropdown{
+  display: block;
+  position: absolute;
+  left: -20px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  transition: opacity 0.5s ease 0s;
+}
+
+.resource-nav:hover div{
+  opacity: 1;
+  visibility: visible;
+
+}
+
