@@ -1,9 +1,9 @@
 export const detailsCard=[
-    {text1:'800+',text2:'Fintechs'},
-    {text1:'300+',text2:'Banks'},
-    {text1:'100+',text2:'NBFCs'},
-    {text1:'20',text2:'Markets'},
-    {text1:'35+',text2:'Million Customers'},
+    {text1:'80+',text2:'Fintechs'},
+    {text1:'20+',text2:'Banks'},
+    {text1:'20+',text2:'NBFCs'},
+    {text1:'12',text2:'Markets'},
+    {text1:'3500+',text2:'Customers'},
     {text1:'$9BN',text2:'Active Loan Portfolio (Core Lending Suite)'},
 ]
 
